@@ -20,6 +20,36 @@ defmodule ElixirTodoListWeb.TodoLive do
     # {:ok, socket} → retorna o estado inicial ao LiveView
     {:ok, socket}
   end
+  # Captura o evento de digitação no campo
+@impl true
+def handle_event("update_form", %{"title" => new_title}, socket) do
+  # Atualiza o valor do campo no estado
+  socket = assign(socket, new_task_title: new_title)
+  {:noreply, socket}  # retorna o socket atualizado sem recarregar a página
+end
+# Captura o evento de envio do formulário
+@impl true
+def handle_event("save_task", %{"title" => title}, socket) do
+  if String.trim(title) != "" do
+    # Cria uma nova tarefa "em memória"
+    new_task = %{
+      id: System.unique_integer([:positive]),
+      title: title,
+      completed: false
+    }
+
+    # Atualiza a lista de tarefas e limpa o campo
+    socket =
+      socket
+      |> update(:tasks, fn tasks -> tasks ++ [new_task] end)
+      |> assign(:new_task_title, "")
+
+    {:noreply, socket}
+  else
+    # Ignora caso o campo esteja vazio
+    {:noreply, socket}
+  end
+end
 
   # render/1 define o HTML que será exibido
   @impl true
