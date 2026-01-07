@@ -67,7 +67,7 @@ end
         name="title"
         value={@new_task_title}
         placeholder="O que precisa ser feito?"
-        class="flex-grow p-2 border rounded"
+        class="flex-grow p-2 border rounded text-gray-900 placeholder-gray-500 bg-white"
         autofocus
       />
       <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
