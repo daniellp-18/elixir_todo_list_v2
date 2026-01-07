@@ -80,3 +80,9 @@ config :phoenix_live_view,
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+config :elixir_todo_list, ElixirTodoList.Repo,
+  database: "elixir_todo_list.db",
+  priv: "priv/repo"
+
+config :elixir_todo_list, ecto_repos: [ElixirTodoList.Repo]
