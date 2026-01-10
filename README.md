@@ -1,8 +1,10 @@
-Elixir Todo List – Phoenix LiveView
+# Elixir Todo List – Phoenix LiveView
+
 Informações do Projeto
 
-Aluno: Daniel Lindoso Penha
-Professor: Sergio Costa
+* Aluno: Daniel Lindoso Penha
+
+* Professor: Sergio Costa
 Curso: Engenharia da Computação
 Universidade: Universidade Federal do Maranhão – UFMA
 Disciplina: Topicos em emgenharia da computação II - Introdução a programaçao funcional
