@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# ElixirTodoList
-
-To start your Phoenix server:
-
-* Run `mix setup` to install and setup dependencies
-* Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-=======
 # ELIXIR TODO LIST 
 
 # Informações do Projeto
@@ -29,13 +19,9 @@ Como Criar um App Todo List com Elixir e LiveView do Zero (Notion):
 https://profsergiocosta.notion.site/Como-Criar-um-App-Todo-List-com-Elixir-e-LiveView-do-Zero-2a8cce97509380eba53fc82bbeb08435.
 
 # Descrição do Projeto
->>>>>>> a68a612dab390a7409e49ad8484b616b03614b02
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Este projeto consiste no desenvolvimento de uma Lista de Tarefas (Todo List) utilizando a linguagem Elixir com o Phoenix Framework e Phoenix LiveView, permitindo uma interface reativa e dinâmica sem recarregamento de página.
 
-<<<<<<< HEAD
-## Learn more
-=======
 A aplicação utiliza Ecto para persistência de dados, com SQLite como banco de dados, além de TailwindCSS e daisyUI para estilização moderna e responsiva.
 
 O projeto foi desenvolvido com fins acadêmicos, seguindo rigorosamente o tutorial proposto em aula, respeitando boas práticas de organização, versionamento e estrutura de projetos Elixir/Phoenix.
@@ -141,10 +127,10 @@ elixir_todo_list/
 └─ README.md                                    # Documentação
 
 # Saiba mais:
->>>>>>> a68a612dab390a7409e49ad8484b616b03614b02
 
 * Official website: https://www.phoenixframework.org/
 * Guides: https://hexdocs.pm/phoenix/overview.html
 * Docs: https://hexdocs.pm/phoenix
 * Forum: https://elixirforum.com/c/phoenix-forum
 * Source: https://github.com/phoenixframework/phoenix
+
