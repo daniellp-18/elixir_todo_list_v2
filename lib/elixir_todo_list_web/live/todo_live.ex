@@ -129,7 +129,10 @@ def render(assigns) do
             class="flex-shrink-0"
           />
 
-          <label class={if task.completed, do: "line-through text-gray-500", else: "text-gray-900"}>
+          <label class={
+            if task.completed,
+              do: "line-through text-gray-400 italic",
+              else: "text-gray-900 font-medium"}>
             <%= task.title %>
           </label>
         </div>
@@ -137,9 +140,9 @@ def render(assigns) do
 
       <.button
         type="button"
-        phx-click="delete"
+        phx-click="excluir"
         phx-value-id={task.id}
-        class="!p-1 !bg-red-500 hover:!bg-red-700"
+        class="!p-2 !bg-red-600 hover:!bg-red-700 text-white font-bold rounded-full"
       >
         &times;
       </.button>
