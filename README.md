@@ -1,4 +1,4 @@
-# Elixir Todo List – Phoenix - LiveView
+# ELIXIR TODO LIST 
 
 # Informações do Projeto
 
